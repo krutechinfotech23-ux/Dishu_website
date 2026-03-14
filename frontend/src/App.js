@@ -27,16 +27,16 @@ const WEDDING_GALLERY = [
 
 // Baby Gallery Images (25 images)
 const BABY_GALLERY = [
-  { id: 1, url: "/baby/baby1.jpg" },
-  { id: 2, url: "/baby/baby2.jpg" },
-  { id: 3, url: "/baby/baby3.jpg" },
-  { id: 4, url: "/baby/baby4.jpg" },
-  { id: 5, url: "/baby/baby5.jpg" },
-  { id: 6, url: "/baby/baby6.jpg" },
-  { id: 7, url: "/baby/baby7.jpg" },
-  { id: 8, url: "/baby/baby8.jpg" },
-  { id: 9, url: "/baby/baby9.jpg" },
-  { id: 10, url: "/baby/baby10.jpg" },
+  { id: 1, url: "/baby/baby1.jpeg" },
+  { id: 2, url: "/baby/baby2.jpeg" },
+  { id: 3, url: "/baby/baby3.jpeg" },
+  { id: 4, url: "/baby/baby4.jpeg" },
+  { id: 5, url: "/baby/baby5.jpeg" },
+  { id: 6, url: "/baby/baby6.jpeg" },
+  { id: 7, url: "/baby/baby7.jpeg" },
+  { id: 8, url: "/baby/baby8.jpeg" },
+  { id: 9, url: "/baby/baby9.jpeg" },
+  { id: 10, url: "/baby/baby10.jpeg" },
 ];
 
 // Hero Video
