@@ -44,7 +44,7 @@ const HERO_VIDEO = "/video/video.mp4";
 
 // Social Links
 const INSTAGRAM_URL = "https://www.instagram.com/dishu_studio_wedding";
-const WHATSAPP_NUMBER = "919723861620";
+const WHATSAPP_NUMBER = "919876543210";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 // Lightbox Modal Component
@@ -74,11 +74,8 @@ const LightboxModal = ({ isOpen, onClose, item, type }) => {
   const gallery = type === 'wedding' ? WEDDING_GALLERY : BABY_GALLERY;
   const currentIndex = gallery.findIndex(g => g.id === item.id);
   const relatedImages = [
-    gallery[currentIndex],
-    gallery[(currentIndex + 1) % gallery.length],
-    gallery[(currentIndex + 2) % gallery.length],
-    gallery[(currentIndex + 3) % gallery.length],
-  ];
+gallery[currentIndex]
+];
 
   return (
     <div 
