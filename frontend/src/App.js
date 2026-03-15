@@ -106,13 +106,32 @@ const LightboxModal = ({ isOpen, onClose, item, type }) => {
           ))}
         </div>
         
-        <div className="text-center pt-4 border-t border-[#F7C52B]/20">
-  <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">
-    {type === "wedding" ? item.couple : item.name}
-  </h3>
-</div>
+         <div className="text-center pt-4 border-t border-[#F7C52B]/20">
+          {type === 'wedding' ? (
+            <>
+              <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.couple}</h3>
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-6 text-sm text-[#8B6914]/70">
+                <span><strong>Event: wedding </strong> {item.event}</span>
+                <span><strong>Location: surat </strong> {item.location}</span>
+                <span><strong>Style: wedding </strong> {item.style}</span>
+              </div>
+            </>
+          ) : (
+            <>
+              <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.name}</h3>
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-6 text-sm text-[#8B6914]/70">
+                <span><strong>Age: 5 </strong> {item.age}</span>
+                <span><strong>Theme: night </strong> {item.theme}</span>
+                <span><strong>Type: cute</strong> {item.type}</span>
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
   );
 };
+
 
 // Intro Animation Component
 const IntroAnimation = ({ onComplete }) => {
