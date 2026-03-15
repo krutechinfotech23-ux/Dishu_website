@@ -107,17 +107,10 @@ const LightboxModal = ({ isOpen, onClose, item, type }) => {
         </div>
         
         <div className="text-center pt-4 border-t border-[#F7C52B]/20">
-          {type === 'wedding' ? (
-            <>
-              <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.couple}</h3>
-          ) : (
-            <>
-              <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.name}</h3>
-            </>
-          )}
-        </div>
-      </div>
-    </div>
+  <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">
+    {type === "wedding" ? item.couple : item.name}
+  </h3>
+</div>
   );
 };
 
