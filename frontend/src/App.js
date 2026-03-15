@@ -40,7 +40,7 @@ const BABY_GALLERY = [
 ];
 
 // Hero Video
-const HERO_VIDEO = "https://customer-assets.emergentagent.com/job_dishu-preview/artifacts/ap9nce59_06%20SONG.mp4";
+const HERO_VIDEO = "/video/video.mp4";
 
 // Social Links
 const INSTAGRAM_URL = "https://www.instagram.com/dishu_studio_wedding";
@@ -110,20 +110,9 @@ const LightboxModal = ({ isOpen, onClose, item, type }) => {
           {type === 'wedding' ? (
             <>
               <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.couple}</h3>
-              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-6 text-sm text-[#8B6914]/70">
-                <span><strong>Event:</strong> {item.event}</span>
-                <span><strong>Location:</strong> {item.location}</span>
-                <span><strong>Style:</strong> {item.style}</span>
-              </div>
-            </>
           ) : (
             <>
               <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.name}</h3>
-              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-6 text-sm text-[#8B6914]/70">
-                <span><strong>Age:</strong> {item.age}</span>
-                <span><strong>Theme:</strong> {item.theme}</span>
-                <span><strong>Type:</strong> {item.type}</span>
-              </div>
             </>
           )}
         </div>
