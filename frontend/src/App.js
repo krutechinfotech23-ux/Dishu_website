@@ -107,20 +107,10 @@ gallery[currentIndex]
           {type === 'wedding' ? (
             <>
               <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.couple}</h3>
-              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-6 text-sm text-[#8B6914]/70">
-                <span><strong>Event: wedding </strong> {item.event}</span>
-                <span><strong>Location: surat </strong> {item.location}</span>
-                <span><strong>Style: wedding </strong> {item.style}</span>
-              </div>
             </>
           ) : (
             <>
               <h3 className="font-playfair text-xl sm:text-2xl text-[#6B5010] mb-3">{item.name}</h3>
-              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-2 sm:gap-6 text-sm text-[#8B6914]/70">
-                <span><strong>Age: 5 </strong> {item.age}</span>
-                <span><strong>Theme: night </strong> {item.theme}</span>
-                <span><strong>Type: cute</strong> {item.type}</span>
-              </div>
             </>
           )}
         </div>
@@ -509,20 +499,6 @@ const HomePage = () => {
           </video>
         </div>
         <div className="hero-overlay" />
-        <div className="hero-content">
-          <p className="text-[#8B6914] uppercase tracking-[0.2em] text-xs sm:text-sm mb-6 font-manrope">Premium Photography Studio</p>
-          <p className="text-[#6B5010]/70 text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-8 sm:mb-10 font-manrope px-4">
-            We specialize in wedding and baby photography, turning your precious moments into timeless art.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
-            <button onClick={() => navigate('/contact')} className="btn-premium" data-testid="hero-book-btn">
-              Book Your Session
-            </button>
-            <button onClick={() => navigate('/services')} className="btn-secondary-custom" data-testid="hero-services-btn">
-              View Services
-            </button>
-          </div>
-        </div>
       </section>
 
       {/* Gallery Showcase Section - After Hero, Before Services */}
@@ -1038,6 +1014,8 @@ const ContactPage = () => {
                     >
                       <option value="Wedding">Wedding Photography</option>
                       <option value="Baby">Baby Photography</option>
+                      <option value="Event">Event Photography</option>
+                        <option value="Other">Other Photography</option>
                     </select>
                   </div>
                   <div>
