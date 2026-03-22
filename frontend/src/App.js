@@ -44,7 +44,7 @@ const HERO_VIDEO = "/video/video.mp4";
 
 // Social Links
 const INSTAGRAM_URL = "https://www.instagram.com/dishu_studio_wedding";
-const WHATSAPP_NUMBER = "919876543210";
+const WHATSAPP_NUMBER = "919825761628";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 // Lightbox Modal Component
@@ -319,15 +319,16 @@ const Footer = () => {
                 <Instagram size={20} />
                 Instagram
               </a>
-             <a
-  href={WHATSAPP_URL}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-2 px-5 py-3 bg-[#25D366] text-white rounded-full font-medium"
->
-  <MessageCircle size={20} />
-  Chat: +91 9825761628
-</a>
+              <a 
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-3 bg-[#25D366] text-white rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+                data-testid="footer-whatsapp-btn"
+              >
+                <MessageCircle size={20} />
+                WhatsApp
+              </a>
             </div>
           </div>
 
