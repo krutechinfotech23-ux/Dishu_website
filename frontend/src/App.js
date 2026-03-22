@@ -5,7 +5,7 @@ import axios from "axios";
 import { Toaster, toast } from "sonner";
 import { Camera, Heart, Baby, Phone, Mail, MapPin, Menu, X, ChevronDown, Star, Award, Clock, Users, Calendar, Volume2, VolumeX, ChevronRight, Instagram, MessageCircle } from "lucide-react";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = "https://dishu-website.onrender.com";
 const API = `${BACKEND_URL}/api`;
 
 // Logo URL
