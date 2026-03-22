@@ -10,22 +10,17 @@
 .hero-bg {
   position: absolute;
   inset: 0;
-  z-index: -1; /* IMPORTANT */
+  z-index: 0;
 }
 
-.hero-bg img,
 .hero-bg video {
   width: 100%;
   height: 100%;
+  min-height: 100%;
   object-fit: cover;
-}
-
-.hero-bg img,
-.hero-bg video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(1.05);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* Light hero overlay - no heavy dark */
