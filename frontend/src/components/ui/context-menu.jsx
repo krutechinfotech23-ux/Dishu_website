@@ -1,13 +1,16 @@
 const handleSubmit = async (e) => {
   e.preventDefault();
 
-  try {
-    // 🔥 Date convert kar
-    const rawDate = formData.preferred_date;
+ try {
+  const rawDate = formData.preferred_date;
 
-    const formattedDate = new Date(rawDate)
-      .toISOString()
-      .split("T")[0];
+  console.log("RAW DATE:", formData.preferred_date);
+
+  const formattedDate = new Date(rawDate)
+    .toISOString()
+    .split("T")[0];
+
+  console.log("FORMATTED DATE:", formattedDate);
 
     // 🔥 API call
     const response = await fetch("https://dishu-website.onrender.com/api/bookings", {
