@@ -319,16 +319,15 @@ const Footer = () => {
                 <Instagram size={20} />
                 Instagram
               </a>
-              <a 
-                href={WHATSAPP_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3 bg-[#25D366] text-white rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
-                data-testid="footer-whatsapp-btn"
-              >
-                <MessageCircle size={20} />
-                WhatsApp
-              </a>
+             <a
+  href={WHATSAPP_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 px-5 py-3 bg-[#25D366] text-white rounded-full font-medium"
+>
+  <MessageCircle size={20} />
+  Chat: +91 9825761628
+</a>
             </div>
           </div>
 
