@@ -1,0 +1,185 @@
+{
+  "design_system": {
+    "brand_identity": {
+      "name": "Dishu Studio",
+      "core_values": ["Premium", "Elegant", "Timeless", "Emotional", "Storytelling"],
+      "tone": "Luxury, Soft, Trustworthy, Airy",
+      "target_audience": "Couples, Parents, High-net-worth Individuals"
+    },
+    "theme": {
+      "mode": "light",
+      "strategy": "High-key photography aesthetic. Dominant white space with soft warm neutrals."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "\"Playfair Display\", serif",
+        "body": "\"Manrope\", sans-serif",
+        "accent": "\"Cormorant Garamond\", serif"
+      },
+      "scale": {
+        "h1": "text-6xl md:text-8xl tracking-tight font-medium",
+        "h2": "text-4xl md:text-6xl tracking-tight font-normal",
+        "h3": "text-2xl md:text-4xl tracking-normal font-light",
+        "body": "text-base md:text-lg leading-relaxed text-muted-foreground",
+        "caption": "text-sm uppercase tracking-widest text-muted-foreground/80"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Manrope:wght@200..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": "hsl(0 0% 100%)",
+        "foreground": "hsl(0 0% 10%)",
+        "primary": "hsl(0 0% 10%)",
+        "primary_foreground": "hsl(0 0% 100%)",
+        "secondary": "hsl(30 20% 97%)",
+        "secondary_foreground": "hsl(0 0% 10%)",
+        "muted": "hsl(0 0% 96%)",
+        "muted_foreground": "hsl(0 0% 40%)",
+        "accent": "hsl(40 50% 50%)",
+        "accent_foreground": "hsl(0 0% 100%)",
+        "border": "hsl(0 0% 92%)",
+        "input": "hsl(0 0% 92%)",
+        "ring": "hsl(0 0% 10%)"
+      },
+      "usage": {
+        "background": "Main page background, cards (white)",
+        "secondary": "Section backgrounds (Cream/Off-white)",
+        "accent": "Subtle borders, icons, active states (Gold/Champagne)",
+        "text_primary": "Headings (Charcoal)",
+        "text_muted": "Body text (Dark Grey)"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "section_padding": "py-24 md:py-32",
+        "container_padding": "px-6 md:px-12",
+        "grid_gap": "gap-8 md:gap-12"
+      },
+      "grid_system": {
+        "portfolio": "grid-cols-1 md:grid-cols-12 gap-4 auto-rows-[400px]",
+        "features": "grid-cols-1 md:grid-cols-3 gap-8"
+      },
+      "border_radius": {
+        "default": "rounded-none",
+        "buttons": "rounded-full",
+        "cards": "rounded-lg"
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-white hover:scale-105 transition-all duration-300 rounded-full px-8 py-3 tracking-wide",
+        "secondary": "bg-transparent border border-primary/20 hover:border-primary text-primary hover:bg-primary/5 transition-all duration-300 rounded-full px-8 py-3",
+        "glass": "bg-white/30 backdrop-blur-md border border-white/40 hover:bg-white/50 text-primary transition-all duration-300 rounded-full px-8 py-3 shadow-sm"
+      },
+      "cards": {
+        "style": "bg-transparent hover:bg-secondary/30 transition-colors duration-500 group overflow-hidden",
+        "image": "aspect-[3/4] object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+      },
+      "inputs": {
+        "style": "bg-transparent border-b border-primary/20 focus:border-primary px-0 py-4 rounded-none outline-none focus:ring-0 transition-colors duration-300 placeholder:text-muted-foreground/50"
+      }
+    },
+    "motion": {
+      "transitions": "transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
+      "animations": {
+        "fade_in_up": "animate-in fade-in slide-in-from-bottom-8 duration-700",
+        "hover_lift": "hover:-translate-y-1 hover:shadow-lg transition-transform duration-300",
+        "parallax": "Use Framer Motion for scroll-linked parallax effects on images"
+      }
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_wedding",
+        "url": "https://images.pexels.com/photos/34793911/pexels-photo-34793911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Elegant couple in luxury ballroom",
+        "usage": "Main Hero Background or Top Wedding Section"
+      },
+      {
+        "category": "wedding_couple_car",
+        "url": "https://images.unsplash.com/photo-1765292783735-9ec7213b1df1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB3ZWRkaW5nJTIwY291cGxlJTIwcG9ydHJhaXQlMjBlbGVnYW50fGVufDB8fHx8MTc3MTY2NDk0Nnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Couple posing by black luxury car",
+        "usage": "Services Page - Wedding Header"
+      },
+      {
+        "category": "wedding_detail",
+        "url": "https://images.unsplash.com/photo-1769038950045-39d384b97929?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjB3ZWRkaW5nJTIwY291cGxlJTIwcG9ydHJhaXQlMjBlbGVnYW50fGVufDB8fHx8MTc3MTY2NDk0Nnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Couple in front of spanish building",
+        "usage": "Portfolio Grid Item"
+      },
+      {
+        "category": "baby_studio",
+        "url": "https://images.unsplash.com/photo-1731817360231-86ba7bf8d4ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxuZXdib3JuJTIwYmFieSUyMHN0dWRpbyUyMHBob3RvZ3JhcGh5JTIwd2hpdGUlMjBiZWQlMjBzb2Z0JTIwbGlnaHQlMjBoaWdoJTIwa2V5fGVufDB8fHx8MTc3MTY2NDk2NHww&ixlib=rb-4.1.0&q=85",
+        "alt": "Newborn baby sleeping on white blanket",
+        "usage": "Services Page - Baby Header"
+      },
+      {
+        "category": "baby_detail",
+        "url": "https://images.pexels.com/photos/16381747/pexels-photo-16381747.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Newborn wrapped in blue blanket",
+        "usage": "Portfolio Grid Item"
+      },
+       {
+        "category": "baby_cute",
+        "url": "https://images.unsplash.com/photo-1754623034737-805e6300a94e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NjZ8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBuZXdib3JuJTIwYmFieSUyMHBob3RvZ3JhcGh5JTIwY3V0ZSUyMGFlc3RoZXRpY3xlbnwwfHx8fDE3NzE2NjQ5NDd8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Baby sitting on grass",
+        "usage": "About Page - Lifestyle shot"
+      },
+      {
+        "category": "studio_interior",
+        "url": "https://images.pexels.com/photos/18269637/pexels-photo-18269637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Minimalist studio interior",
+        "usage": "About Page - Studio Story"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-1 stroke-primary"
+    }
+  },
+  "implementation_instructions": {
+    "general": [
+      "Use 'Playfair Display' for all Headings (h1-h3). Use 'Manrope' for body text.",
+      "Implement smooth scrolling using Lenis or similar library if possible, otherwise CSS scroll-behavior: smooth.",
+      "Ensure all images have a slight parallax effect on scroll using Framer Motion.",
+      "Navigation bar must be sticky, transparent initially, and turn white/glassmorphic on scroll.",
+      "Forms must use the minimal underlined style defined in components.inputs.",
+      "Buttons should have a subtle 'glow' or 'lift' effect on hover.",
+      "Use plenty of negative space (padding-y-32 for sections)."
+    ],
+    "pages": {
+      "home": [
+        "Hero: Full-screen image with centered elegant typography. Text: 'Capturing Timeless Moments'.",
+        "Intro Overlay: Fade in logo, then fade out to reveal hero.",
+        "Featured Services: Split screen or large cards (Wedding vs Baby). Hover expands the card.",
+        "Why Choose Us: 3-col grid with minimal icons and large typography."
+      ],
+      "services": [
+        "Layout: Alternating zig-zag layout (Image Left/Text Right, then swap).",
+        "Pricing: clean, minimal cards, no borders, just typography and a 'Book Now' button."
+      ],
+      "portfolio": [
+        "Use a Masonry or 'Tetris' grid layout.",
+        "Images should be clickable to open a lightbox (use a simple modal)."
+      ],
+      "contact": [
+        "Split layout: Map on one side (grayscale filter), Form on the other.",
+        "Form fields: Underlined style, no background."
+      ]
+    },
+    "admin_dashboard": {
+      "style": "Clean, sidebar layout. White background. Minimal shadows.",
+      "tables": "Simple rows, hover effect, action menu on right."
+    }
+  },
+  "universal_guidelines": [
+    "Do NOT use dark gradients. Keep it light and airy.",
+    "Do NOT use generic 'Inter' font for headings.",
+    "Do NOT center align long paragraphs. Left align for readability.",
+    "Use 2x more padding than you think is necessary.",
+    "All interactive elements must have data-testid attributes."
+  ]
+}
